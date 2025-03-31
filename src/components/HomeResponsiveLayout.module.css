@@ -27,7 +27,8 @@
 }
 .tagline {
   margin: 0;
-  width: 358px;
+  max-width: 358px;
+  width: 100%;
   position: relative;
   font-size: inherit;
   text-transform: uppercase;
@@ -38,7 +39,8 @@
 }
 .heroBanner {
   align-self: stretch;
-  height: 323px;
+  min-height: 323px;
+  height: auto;
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
@@ -49,7 +51,7 @@
   background-image: url("/hero-banner@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   text-align: left;
   font-size: var(--font-size-15xl);
   color: var(--text);
@@ -378,9 +380,32 @@
 }
 @media screen and (max-width: 750px) {
   .heroBanner {
-    padding-left: var(--padding-15xl);
-    padding-right: var(--padding-15xl);
-    box-sizing: border-box;
+    padding: 30px 20px;
+    min-height: 250px;
+  }
+
+  .tagline {
+    font-size: 24px;
+    line-height: 1.3;
+    max-width: 100%;
+  }
+
+  .leftContentContainer, .rightContent {
+    padding: 20px;
+    margin: 10px;
+    width: calc(100% - 40px);
+  }
+
+  .leftContentText {
+    font-size: 16px;
+    letter-spacing: 0.15em;
+    width: 100%;
+  }
+
+  .stepOneDescriptionContainer {
+    font-size: 16px;
+    padding: 0 15px;
+    width: 100%;
   }
 
   .heroContent {
@@ -405,29 +430,22 @@
   }
 
   .tagline {
-    font-size: var(--font-size-xl);
+    font-size: 20px;
+  }
+
+  .leftContentContainer, .rightContent {
+    padding: 15px;
+    margin: 5px;
+    width: calc(100% - 30px);
   }
 
   .leftContentText {
-    font-size: var(--font-size-base);
-  }
-
-  .leftContentContainer {
-    flex: 1;
-    width: calc(100% - 40px);
-  }
-
-  .rightContent {
-    flex: 1;
-    width: calc(100% - 40px);
-  }
-
-  .stepOneTitle {
-    font-size: var(--font-size-10xl);
+    font-size: 14px;
   }
 
   .stepOneDescriptionContainer {
-    font-size: var(--font-size-base);
+    font-size: 14px;
+    padding: 0 10px;
   }
 
   .one {
