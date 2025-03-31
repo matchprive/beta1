@@ -36,6 +36,8 @@
   font-family: inherit;
   display: inline-block;
   flex-shrink: 0;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .heroBanner {
   align-self: stretch;
@@ -56,6 +58,17 @@
   font-size: var(--font-size-15xl);
   color: var(--text);
   font-family: var(--font-playfair-display-sc);
+  position: relative;
+}
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 .leftContentText {
   width: 213.2px;
@@ -387,10 +400,9 @@
 @media screen and (max-width: 750px) {
   .heroBanner {
     padding: 40px 24px;
-    min-height: 400px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    min-height: 60vh;
+    background-position: 65% center;
+    background-size: cover;
   }
 
   .tagline {
@@ -439,14 +451,14 @@
 
   .tagline {
     font-size: 20px;
+    max-width: 280px;
   }
 
   .heroBanner {
     padding: 32px 20px;
-    min-height: 320px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 50vh;
+    background-position: 68% center;
+    background-size: cover;
   }
 
   .leftContentContainer, .rightContent {
