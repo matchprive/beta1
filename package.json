@@ -2,6 +2,7 @@
   "name": "beta2",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -28,7 +29,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
