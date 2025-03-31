@@ -1,5 +1,5 @@
 import { FunctionComponent, useState, useCallback } from "react";
-import CHATBOT from "./CHATBOT";
+import { CHATBOT } from "./CHATBOT";
 import PortalPopup from "./PortalPopup";
 import CallToActionContainer from "./CallToActionContainer";
 import styles from "./HomeResponsiveLayout.module.css";
