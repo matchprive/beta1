@@ -93,6 +93,14 @@ export const CHATBOT: React.FC = () => {
             placeholder="Type your message..."
             disabled={isProfileDone}
           />
+          <button 
+            type="submit" 
+            className={styles.sendButton}
+            disabled={!inputMessage.trim() || isProfileDone}
+            aria-label="Send message"
+          >
+            →
+          </button>
         </form>
       </div>
     </div>
