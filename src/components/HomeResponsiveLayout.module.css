@@ -67,7 +67,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
   z-index: 1;
 }
 .leftContentText {
@@ -400,15 +400,16 @@
 @media screen and (max-width: 750px) {
   .heroBanner {
     padding: 40px 24px;
-    min-height: 60vh;
-    background-position: 65% center;
-    background-size: cover;
+    height: 500px;
+    background-position: 25% center;
+    background-size: 200%;
   }
 
   .tagline {
     font-size: 24px;
     line-height: 1.3;
     max-width: 100%;
+    padding-right: 20%;
   }
 
   .leftContentContainer, .rightContent {
@@ -451,14 +452,15 @@
 
   .tagline {
     font-size: 20px;
-    max-width: 280px;
+    max-width: 200px;
+    padding-right: 0;
   }
 
   .heroBanner {
     padding: 32px 20px;
-    min-height: 50vh;
-    background-position: 68% center;
-    background-size: cover;
+    height: 420px;
+    background-position: 20% center;
+    background-size: 250%;
   }
 
   .leftContentContainer, .rightContent {
