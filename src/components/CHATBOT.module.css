@@ -192,8 +192,8 @@
 }
 
 .userMessage {
-  background-color: #007AFF;
-  color: #FFFFFF !important;
+  background-color: #E9E9EB;
+  color: #000000 !important;
   padding: 12px 16px;
   margin: 8px 16px;
   border-radius: 20px 20px 4px 20px;
@@ -205,8 +205,8 @@
 }
 
 .gptMessage {
-  background-color: #E9E9EB;
-  color: #000000 !important;
+  background-color: #000000;
+  color: #FFFFFF !important;
   padding: 12px 16px;
   margin: 8px 16px;
   border-radius: 20px 20px 20px 4px;
@@ -228,8 +228,8 @@
 }
 
 .sendButton {
-  background-color: #007AFF;
-  color: white;
+  background-color: #000000;
+  color: #FFFFFF;
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -239,13 +239,14 @@
   justify-content: center;
   cursor: pointer;
   transition: background-color 0.2s;
+  font-size: 20px;
 }
 
 .sendButton:hover {
-  background-color: #0056b3;
+  background-color: #333333;
 }
 
 .sendButton:disabled {
-  background-color: #ccc;
+  background-color: #cccccc;
   cursor: not-allowed;
 }
