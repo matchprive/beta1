@@ -8,7 +8,7 @@ interface Message {
 }
 
 export const CHATBOT: React.FC = () => {
-  const [isMinimized, setIsMinimized] = useState(false);
+  const [isMinimized, setIsMinimized] = useState(true);
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputMessage, setInputMessage] = useState('');
   const [isProfileDone, setIsProfileDone] = useState(false);
