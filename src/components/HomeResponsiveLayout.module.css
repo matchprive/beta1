@@ -51,7 +51,7 @@
   background-image: url("/hero-banner@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 30%;
+  background-position: center;
   text-align: left;
   font-size: var(--font-size-15xl);
   color: var(--text);
@@ -387,8 +387,9 @@
 @media screen and (max-width: 750px) {
   .heroBanner {
     padding: 40px 24px;
-    min-height: 300px;
-    background-position: center 25%;
+    min-height: 400px;
+    background-position: center;
+    background-size: contain;
   }
 
   .tagline {
@@ -398,10 +399,11 @@
   }
 
   .leftContentContainer, .rightContent {
-    padding: 32px 24px;
-    margin: 8px 16px;
-    width: calc(100% - 32px);
-    min-height: 100px;
+    padding: 40px 24px;
+    margin: 8px auto;
+    width: 85%;
+    min-height: 140px;
+    max-width: 320px;
   }
 
   .leftContentText {
@@ -409,6 +411,7 @@
     letter-spacing: 0.15em;
     width: 100%;
     text-align: center;
+    max-width: 260px;
   }
 
   .heroContent {
@@ -438,14 +441,17 @@
   }
 
   .leftContentContainer, .rightContent {
-    padding: 28px 20px;
-    margin: 6px 12px;
-    width: calc(100% - 24px);
-    min-height: 90px;
+    padding: 36px 20px;
+    margin: 6px auto;
+    width: 80%;
+    min-height: 160px;
+    max-width: 280px;
   }
 
   .leftContentText {
     font-size: 16px;
+    max-width: 220px;
+    line-height: 1.4;
   }
 
   .stepOneDescriptionContainer {
