@@ -1,5 +1,5 @@
 import { FunctionComponent, useState, useCallback } from "react";
-import CHATBOT from "./CHATBOT";
+import { CHATBOT } from "./CHATBOT";
 import PortalPopup from "./PortalPopup";
 import styles from "./CallToActionContainer.module.css";
 
@@ -31,7 +31,7 @@ const CallToActionContainer: FunctionComponent<CallToActionContainerType> = ({
           <div className={styles.startNow}>START NOW</div>
         </button>
         <div className={styles.callToActionContainer1}>
-          <span>{`When you submit, you’ll instantly receive your `}</span>
+          <span>{`When you submit, you'll instantly receive your `}</span>
           <b>free</b>
           <span>{` Personality & Relationship Report. `}</span>
         </div>
