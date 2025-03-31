@@ -390,6 +390,7 @@
     min-height: 400px;
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .tagline {
@@ -440,11 +441,19 @@
     font-size: 20px;
   }
 
+  .heroBanner {
+    padding: 32px 20px;
+    min-height: 320px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   .leftContentContainer, .rightContent {
-    padding: 36px 20px;
+    padding: 32px 20px;
     margin: 6px auto;
     width: 80%;
-    min-height: 160px;
+    min-height: 140px;
     max-width: 280px;
   }
 
